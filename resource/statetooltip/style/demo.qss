@@ -1,0 +1,4 @@
+QPushButton {
+    font: 19px 'Microsoft YaHei';
+    border: transparent;
+}
