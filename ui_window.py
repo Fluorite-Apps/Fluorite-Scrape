@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'windowOPabTg.ui'
+## Form generated from reading UI file 'windowGwOfpk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -30,7 +30,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setStyleSheet(u"")
         self.stackedWidget = QStackedWidget(self.centralwidget)
         self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidget.setGeometry(QRect(9, -1, 1171, 751))
+        self.stackedWidget.setGeometry(QRect(9, -1, 1171, 811))
         self.Main = QWidget()
         self.Main.setObjectName(u"Main")
         self.label_19 = QLabel(self.Main)
@@ -54,7 +54,7 @@ class Ui_MainWindow(object):
         self.title_3.setAlignment(Qt.AlignCenter)
         self.label_24 = QLabel(self.Main)
         self.label_24.setObjectName(u"label_24")
-        self.label_24.setGeometry(QRect(290, 70, 521, 651))
+        self.label_24.setGeometry(QRect(290, 70, 521, 721))
         self.label_24.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -65,13 +65,14 @@ class Ui_MainWindow(object):
 "        }")
         self.url_input = QLineEdit(self.Main)
         self.url_input.setObjectName(u"url_input")
-        self.url_input.setGeometry(QRect(330, 200, 441, 51))
+        self.url_input.setGeometry(QRect(330, 230, 441, 51))
         self.url_input.setStyleSheet(u"color: gray;\n"
-"background-color: #21252d;\n"
-"border-radius: 25px;")
+"background-color: rgb(63, 67, 86);\n"
+"border-radius: 15px;\n"
+"border: 2px solid rgb(73, 88, 97);")
         self.text_frame = QFrame(self.Main)
         self.text_frame.setObjectName(u"text_frame")
-        self.text_frame.setGeometry(QRect(520, 290, 251, 91))
+        self.text_frame.setGeometry(QRect(520, 360, 241, 91))
         self.text_frame.setCursor(QCursor(Qt.PointingHandCursor))
         self.text_frame.setStyleSheet(u"QPushButton {\n"
 "\n"
@@ -90,23 +91,23 @@ class Ui_MainWindow(object):
         self.text_layout.setContentsMargins(0, 0, 0, 0)
         self.label_23 = QLabel(self.Main)
         self.label_23.setObjectName(u"label_23")
-        self.label_23.setGeometry(QRect(341, 290, 171, 91))
+        self.label_23.setGeometry(QRect(331, 360, 171, 91))
         self.label_23.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
-"			background-color: #272c36;\n"
+"			background-color: rgba(33,37,45,140);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_4 = QLabel(self.Main)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(360, 320, 141, 31))
+        self.label_4.setGeometry(QRect(350, 390, 141, 31))
         self.label_4.setStyleSheet(u"color: gray")
         self.label_4.setWordWrap(True)
         self.images_frame = QFrame(self.Main)
         self.images_frame.setObjectName(u"images_frame")
-        self.images_frame.setGeometry(QRect(519, 400, 251, 91))
+        self.images_frame.setGeometry(QRect(520, 470, 241, 91))
         self.images_frame.setCursor(QCursor(Qt.PointingHandCursor))
         self.images_frame.setStyleSheet(u"QPushButton {\n"
 "\n"
@@ -125,23 +126,23 @@ class Ui_MainWindow(object):
         self.images_layout.setContentsMargins(0, 0, 0, 0)
         self.label_20 = QLabel(self.Main)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setGeometry(QRect(340, 400, 171, 91))
+        self.label_20.setGeometry(QRect(330, 470, 171, 91))
         self.label_20.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
-"			background-color: #272c36;\n"
+"			background-color: rgba(33,37,45,140);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_6 = QLabel(self.Main)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(360, 430, 141, 31))
+        self.label_6.setGeometry(QRect(350, 500, 141, 31))
         self.label_6.setStyleSheet(u"color: gray")
         self.label_6.setWordWrap(True)
         self.videos_frame = QFrame(self.Main)
         self.videos_frame.setObjectName(u"videos_frame")
-        self.videos_frame.setGeometry(QRect(520, 510, 251, 91))
+        self.videos_frame.setGeometry(QRect(520, 580, 241, 91))
         self.videos_frame.setCursor(QCursor(Qt.PointingHandCursor))
         self.videos_frame.setStyleSheet(u"QPushButton {\n"
 "\n"
@@ -160,40 +161,100 @@ class Ui_MainWindow(object):
         self.videos_layout.setContentsMargins(0, 0, 0, 0)
         self.label_21 = QLabel(self.Main)
         self.label_21.setObjectName(u"label_21")
-        self.label_21.setGeometry(QRect(341, 510, 171, 91))
+        self.label_21.setGeometry(QRect(331, 580, 171, 91))
         self.label_21.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
-"			background-color: #272c36;\n"
+"			background-color: rgba(33,37,45,140);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_5 = QLabel(self.Main)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(360, 540, 131, 31))
+        self.label_5.setGeometry(QRect(350, 610, 131, 31))
         self.label_5.setStyleSheet(u"color: gray")
-        self.scrape_frame = QFrame(self.Main)
-        self.scrape_frame.setObjectName(u"scrape_frame")
-        self.scrape_frame.setGeometry(QRect(410, 620, 251, 91))
-        self.scrape_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.scrape_frame.setStyleSheet(u"QPushButton {\n"
-"\n"
-"\n"
+        self.label_98 = QLabel(self.Main)
+        self.label_98.setObjectName(u"label_98")
+        self.label_98.setGeometry(QRect(320, 330, 461, 431))
+        self.label_98.setStyleSheet(u"QLabel {\n"
+"        	\n"
+"	background-color: rgb(70, 74, 95);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_99 = QLabel(self.Main)
+        self.label_99.setObjectName(u"label_99")
+        self.label_99.setGeometry(QRect(320, 200, 461, 111))
+        self.label_99.setStyleSheet(u"QLabel {\n"
+"        	\n"
+"	background-color: rgb(70, 74, 95);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_115 = QLabel(self.Main)
+        self.label_115.setObjectName(u"label_115")
+        self.label_115.setGeometry(QRect(520, 360, 241, 91))
+        self.label_115.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.scrape_frame.setFrameShape(QFrame.NoFrame)
-        self.scrape_frame.setFrameShadow(QFrame.Raised)
-        self.scrape_frame.setLineWidth(0)
-        self.scrape_layout = QHBoxLayout(self.scrape_frame)
-        self.scrape_layout.setSpacing(0)
-        self.scrape_layout.setObjectName(u"scrape_layout")
-        self.scrape_layout.setContentsMargins(0, 0, 0, 0)
+        self.label_116 = QLabel(self.Main)
+        self.label_116.setObjectName(u"label_116")
+        self.label_116.setGeometry(QRect(520, 470, 241, 91))
+        self.label_116.setStyleSheet(u"QLabel {\n"
+"			background-color: #595D75;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_117 = QLabel(self.Main)
+        self.label_117.setObjectName(u"label_117")
+        self.label_117.setGeometry(QRect(520, 580, 241, 91))
+        self.label_117.setStyleSheet(u"QLabel {\n"
+"			background-color: #595D75;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.status_bar = QFrame(self.Main)
+        self.status_bar.setObjectName(u"status_bar")
+        self.status_bar.setGeometry(QRect(330, 690, 431, 51))
+        font1 = QFont()
+        font1.setFamilies([u"Segoe UI"])
+        font1.setPointSize(12)
+        font1.setBold(False)
+        font1.setItalic(False)
+        self.status_bar.setFont(font1)
+        self.status_bar.setCursor(QCursor(Qt.PointingHandCursor))
+        self.status_bar.setStyleSheet(u"color: gray;\n"
+"font: 12pt \"Segoe UI\";")
+        self.status_bar.setFrameShape(QFrame.NoFrame)
+        self.status_bar.setFrameShadow(QFrame.Raised)
+        self.status_bar.setLineWidth(0)
+        self.status_bar_layout = QHBoxLayout(self.status_bar)
+        self.status_bar_layout.setSpacing(0)
+        self.status_bar_layout.setObjectName(u"status_bar_layout")
+        self.status_bar_layout.setContentsMargins(0, 0, 0, 0)
+        self.label_118 = QLabel(self.Main)
+        self.label_118.setObjectName(u"label_118")
+        self.label_118.setGeometry(QRect(330, 690, 431, 51))
+        self.label_118.setStyleSheet(u"color: gray;\n"
+"background-color: rgb(63, 67, 86);\n"
+"border-radius: 15px;\n"
+"border: 2px solid rgba(255, 237, 194, 40);")
         self.stackedWidget.addWidget(self.Main)
         self.label_24.raise_()
+        self.label_98.raise_()
+        self.label_118.raise_()
+        self.label_117.raise_()
+        self.label_116.raise_()
+        self.label_115.raise_()
+        self.label_99.raise_()
         self.label_19.raise_()
         self.title_3.raise_()
         self.url_input.raise_()
@@ -206,7 +267,7 @@ class Ui_MainWindow(object):
         self.videos_frame.raise_()
         self.label_21.raise_()
         self.label_5.raise_()
-        self.scrape_frame.raise_()
+        self.status_bar.raise_()
         self.misc_keep = QWidget()
         self.misc_keep.setObjectName(u"misc_keep")
         self.manage_buckets_frame_2 = QFrame(self.misc_keep)
@@ -420,6 +481,38 @@ class Ui_MainWindow(object):
         self.na2 = QWidget()
         self.na2.setObjectName(u"na2")
         self.stackedWidget.addWidget(self.na2)
+        self.app_install_frame_6 = QFrame(self.centralwidget)
+        self.app_install_frame_6.setObjectName(u"app_install_frame_6")
+        self.app_install_frame_6.setGeometry(QRect(690, 230, 91, 51))
+        self.app_install_frame_6.setCursor(QCursor(Qt.PointingHandCursor))
+        self.app_install_frame_6.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border: 2px solid rgb(73, 88, 97);\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.app_install_frame_6.setFrameShape(QFrame.NoFrame)
+        self.app_install_frame_6.setFrameShadow(QFrame.Raised)
+        self.app_install_frame_6.setLineWidth(0)
+        self.scrape_layout = QHBoxLayout(self.app_install_frame_6)
+        self.scrape_layout.setSpacing(0)
+        self.scrape_layout.setObjectName(u"scrape_layout")
+        self.scrape_layout.setContentsMargins(0, 0, 0, 0)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -442,6 +535,12 @@ class Ui_MainWindow(object):
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Images", None))
         self.label_21.setText("")
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Videos", None))
+        self.label_98.setText("")
+        self.label_99.setText("")
+        self.label_115.setText("")
+        self.label_116.setText("")
+        self.label_117.setText("")
+        self.label_118.setText("")
         self.label_11.setText("")
         self.label_12.setText("")
         self.label_13.setText("")

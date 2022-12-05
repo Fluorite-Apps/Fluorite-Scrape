@@ -23,7 +23,7 @@
       <x>9</x>
       <y>-1</y>
       <width>1171</width>
-      <height>751</height>
+      <height>811</height>
      </rect>
     </property>
     <widget class="QWidget" name="Main">
@@ -80,7 +80,7 @@
         <x>290</x>
         <y>70</y>
         <width>521</width>
-        <height>651</height>
+        <height>721</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -101,15 +101,16 @@
       <property name="geometry">
        <rect>
         <x>330</x>
-        <y>200</y>
+        <y>230</y>
         <width>441</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">color: gray;
-background-color: #21252d;
-border-radius: 25px;</string>
+background-color: rgb(63, 67, 86);
+border-radius: 15px;
+border: 2px solid rgb(73, 88, 97);</string>
       </property>
       <property name="text">
        <string>Enter Url for website to scrape</string>
@@ -119,8 +120,8 @@ border-radius: 25px;</string>
       <property name="geometry">
        <rect>
         <x>520</x>
-        <y>290</y>
-        <width>251</width>
+        <y>360</y>
+        <width>241</width>
         <height>91</height>
        </rect>
       </property>
@@ -167,8 +168,8 @@ border-radius: 25px;</string>
      <widget class="QLabel" name="label_23">
       <property name="geometry">
        <rect>
-        <x>341</x>
-        <y>290</y>
+        <x>331</x>
+        <y>360</y>
         <width>171</width>
         <height>91</height>
        </rect>
@@ -177,7 +178,7 @@ border-radius: 25px;</string>
        <string notr="true">QLabel {
 
 
-			background-color: #272c36;
+			background-color: rgba(33,37,45,140);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -190,8 +191,8 @@ border-radius: 25px;</string>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>320</y>
+        <x>350</x>
+        <y>390</y>
         <width>141</width>
         <height>31</height>
        </rect>
@@ -209,9 +210,9 @@ border-radius: 25px;</string>
      <widget class="QFrame" name="images_frame">
       <property name="geometry">
        <rect>
-        <x>519</x>
-        <y>400</y>
-        <width>251</width>
+        <x>520</x>
+        <y>470</y>
+        <width>241</width>
         <height>91</height>
        </rect>
       </property>
@@ -258,8 +259,8 @@ border-radius: 25px;</string>
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>400</y>
+        <x>330</x>
+        <y>470</y>
         <width>171</width>
         <height>91</height>
        </rect>
@@ -268,7 +269,7 @@ border-radius: 25px;</string>
        <string notr="true">QLabel {
 
 
-			background-color: #272c36;
+			background-color: rgba(33,37,45,140);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -281,8 +282,8 @@ border-radius: 25px;</string>
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>430</y>
+        <x>350</x>
+        <y>500</y>
         <width>141</width>
         <height>31</height>
        </rect>
@@ -301,8 +302,8 @@ border-radius: 25px;</string>
       <property name="geometry">
        <rect>
         <x>520</x>
-        <y>510</y>
-        <width>251</width>
+        <y>580</y>
+        <width>241</width>
         <height>91</height>
        </rect>
       </property>
@@ -349,8 +350,8 @@ border-radius: 25px;</string>
      <widget class="QLabel" name="label_21">
       <property name="geometry">
        <rect>
-        <x>341</x>
-        <y>510</y>
+        <x>331</x>
+        <y>580</y>
         <width>171</width>
         <height>91</height>
        </rect>
@@ -359,7 +360,7 @@ border-radius: 25px;</string>
        <string notr="true">QLabel {
 
 
-			background-color: #272c36;
+			background-color: rgba(33,37,45,140);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -372,8 +373,8 @@ border-radius: 25px;</string>
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>540</y>
+        <x>350</x>
+        <y>610</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -385,27 +386,136 @@ border-radius: 25px;</string>
        <string>Videos</string>
       </property>
      </widget>
-     <widget class="QFrame" name="scrape_frame">
+     <widget class="QLabel" name="label_98">
       <property name="geometry">
        <rect>
-        <x>410</x>
-        <y>620</y>
-        <width>251</width>
+        <x>320</x>
+        <y>330</y>
+        <width>461</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(70, 74, 95);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_99">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>200</y>
+        <width>461</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(70, 74, 95);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_115">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>360</y>
+        <width>241</width>
         <height>91</height>
        </rect>
       </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton {
-
-
+       <string notr="true">QLabel {
 			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
         }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_116">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>470</y>
+        <width>241</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+			background-color: #595D75;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_117">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>580</y>
+        <width>241</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+			background-color: #595D75;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="status_bar">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>690</y>
+        <width>431</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: gray;
+font: 12pt &quot;Segoe UI&quot;;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -416,7 +526,7 @@ border-radius: 25px;</string>
       <property name="lineWidth">
        <number>0</number>
       </property>
-      <layout class="QHBoxLayout" name="scrape_layout">
+      <layout class="QHBoxLayout" name="status_bar_layout">
        <property name="spacing">
         <number>0</number>
        </property>
@@ -434,7 +544,32 @@ border-radius: 25px;</string>
        </property>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_118">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>690</y>
+        <width>431</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: gray;
+background-color: rgb(63, 67, 86);
+border-radius: 15px;
+border: 2px solid rgba(255, 237, 194, 40);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_24</zorder>
+     <zorder>label_98</zorder>
+     <zorder>label_118</zorder>
+     <zorder>label_117</zorder>
+     <zorder>label_116</zorder>
+     <zorder>label_115</zorder>
+     <zorder>label_99</zorder>
      <zorder>label_19</zorder>
      <zorder>title_3</zorder>
      <zorder>url_input</zorder>
@@ -447,7 +582,7 @@ border-radius: 25px;</string>
      <zorder>videos_frame</zorder>
      <zorder>label_21</zorder>
      <zorder>label_5</zorder>
-     <zorder>scrape_frame</zorder>
+     <zorder>status_bar</zorder>
     </widget>
     <widget class="QWidget" name="misc_keep">
      <widget class="QFrame" name="manage_buckets_frame_2">
@@ -903,6 +1038,68 @@ QPushButton:hover {
     <widget class="QWidget" name="na6"/>
     <widget class="QWidget" name="na7"/>
     <widget class="QWidget" name="na2"/>
+   </widget>
+   <widget class="QFrame" name="app_install_frame_6">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>230</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	
+	font: 9pt &quot;Segoe UI&quot;;
+	background-color: rgb(89, 93, 117);
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 2px solid rgb(73, 88, 97);
+}
+QPushButton:pressed:hover{
+	background-color: rgb(46, 49, 63);
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom: 30px shadow;
+}
+
+QPushButton:hover {
+	background-color: rgb(66, 134, 132);
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom: 30px shadow;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <layout class="QHBoxLayout" name="scrape_layout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
