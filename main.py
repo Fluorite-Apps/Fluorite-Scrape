@@ -162,7 +162,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                         web_text.truncate(0)
                         web_text.seek(0)
                         self.status_bar_text.setText("Writing text to file temp/text.txt")
-                        web_text.write(str(driver.find_element(By.XPATH, "/html/body").text))
+                        scraped_text = str(driver.find_element(By.XPATH, "/html/body").text)
+                        web_text.write(scraped_text)
+                        self.textBrowser.insertPlainText(scraped_text)
                 except:
                     traceback.print_exc()
                     notify_in_thread(title_prompt="Failed", message_prompt=('Something went wrong'))
@@ -204,15 +206,16 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             notify_in_thread(title_prompt="Scraping", message_prompt=('Finished Scraping'))
             self.status_bar_text.setText("Finished scraping")
-
-
+            self.scrape_layout.removeWidget(self.scrape_button)
+            self.scrape_button.deleteLater()
+            self.stackedWidget.setCurrentWidget(self.stackedWidget.findChild(QtWidgets.QWidget, "Display"))
 
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
-window.setWindowTitle('  ')
 my_pixmap = QPixmap("fluorite.ico")
 my_icon = QIcon(my_pixmap)
+window.setWindowTitle(" ")
 window.setWindowIcon(my_icon)
 window.show()
 app.exec()

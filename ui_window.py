@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'windowGwOfpk.ui'
+## Form generated from reading UI file 'windowYntfAV.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -16,8 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
-    QLineEdit, QMainWindow, QSizePolicy, QStackedWidget,
-    QStatusBar, QWidget)
+    QLineEdit, QMainWindow, QScrollArea, QSizePolicy,
+    QStackedWidget, QStatusBar, QTextBrowser, QWidget)
 import resource_file_qt_rc
 
 class Ui_MainWindow(object):
@@ -268,6 +268,9 @@ class Ui_MainWindow(object):
         self.label_21.raise_()
         self.label_5.raise_()
         self.status_bar.raise_()
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.stackedWidget.addWidget(self.page)
         self.misc_keep = QWidget()
         self.misc_keep.setObjectName(u"misc_keep")
         self.manage_buckets_frame_2 = QFrame(self.misc_keep)
@@ -457,9 +460,58 @@ class Ui_MainWindow(object):
         self.na1 = QWidget()
         self.na1.setObjectName(u"na1")
         self.stackedWidget.addWidget(self.na1)
-        self.na = QWidget()
-        self.na.setObjectName(u"na")
-        self.stackedWidget.addWidget(self.na)
+        self.Display = QWidget()
+        self.Display.setObjectName(u"Display")
+        self.label_22 = QLabel(self.Display)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setGeometry(QRect(330, 90, 441, 91))
+        self.label_22.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+"			background-color: #21252d;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_25 = QLabel(self.Display)
+        self.label_25.setObjectName(u"label_25")
+        self.label_25.setGeometry(QRect(290, 70, 521, 721))
+        self.label_25.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+"			background-color: #3C4052;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.title_4 = QLabel(self.Display)
+        self.title_4.setObjectName(u"title_4")
+        self.title_4.setGeometry(QRect(330, 90, 441, 91))
+        self.title_4.setFont(font)
+        self.title_4.setStyleSheet(u"color: gray")
+        self.title_4.setAlignment(Qt.AlignCenter)
+        self.scrollArea = QScrollArea(self.Display)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setGeometry(QRect(329, 209, 441, 541))
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 439, 539))
+        self.title_5 = QLabel(self.scrollAreaWidgetContents)
+        self.title_5.setObjectName(u"title_5")
+        self.title_5.setGeometry(QRect(0, 10, 451, 41))
+        self.title_5.setFont(font)
+        self.title_5.setStyleSheet(u"color: gray")
+        self.title_5.setAlignment(Qt.AlignCenter)
+        self.textBrowser = QTextBrowser(self.scrollAreaWidgetContents)
+        self.textBrowser.setObjectName(u"textBrowser")
+        self.textBrowser.setGeometry(QRect(10, 50, 421, 192))
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.stackedWidget.addWidget(self.Display)
+        self.label_25.raise_()
+        self.label_22.raise_()
+        self.title_4.raise_()
+        self.scrollArea.raise_()
         self.na8 = QWidget()
         self.na8.setObjectName(u"na8")
         self.stackedWidget.addWidget(self.na8)
@@ -553,5 +605,9 @@ class Ui_MainWindow(object):
         self.label_16.setText("")
         self.label_17.setText("")
         self.label_18.setText("")
+        self.label_22.setText("")
+        self.label_25.setText("")
+        self.title_4.setText(QCoreApplication.translate("MainWindow", u"Fluorite Scrape", None))
+        self.title_5.setText(QCoreApplication.translate("MainWindow", u"Text", None))
     # retranslateUi
 
