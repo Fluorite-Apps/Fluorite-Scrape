@@ -137,9 +137,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 chrome_options.add_argument("--headless")
                 driver = webdriver.Chrome(options=chrome_options)
                 driver.get(url)
-            except:
-                notify_in_thread(title_prompt="Failed", message_prompt=('Invalid Url or invalid Chrome driver'))
-                self.status_bar_text.setText("Invalid Url or invalid Chrome driver")
+            except Exception as e:
+                notify_in_thread(title_prompt="Failed", message_prompt=('Invalid Url or Chrome driver'))
+                self.status_bar_text.setText("Invalid Url or Chrome driver")
+                with open('temp/error/error.txt', 'w+') as error:
+                    error.truncate(0)
+                    error.write(str(e))
+                return
             time.sleep(5)
 
             if self.text_toggle.isChecked() == True:
