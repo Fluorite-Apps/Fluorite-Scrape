@@ -53,6 +53,8 @@ if not os.path.isdir('temp/images/'):
     os.mkdir('temp/images/')
 if not os.path.isdir('temp/videos/'):
     os.mkdir('temp/videos/')
+if not os.path.isdir('temp/error/'):
+    os.mkdir('temp/error/')
 
 
 def notify_in_thread(title_prompt, message_prompt):
@@ -121,8 +123,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             filelist = [f for f in os.listdir('temp/images/') if f.endswith(".png")]
             for f in filelist:
                 os.remove(os.path.join('temp/images/', f))
-            # for f in filelist:
-            #     os.remove(os.path.join('temp/videos/*', f))
+            for dirpath, dirnames, filenames in os.walk('temp/videos', topdown=False):
+                for filename in filenames:
+                    file_path = os.path.join(dirpath, filename)
+                    os.remove(file_path)
+
+                for dirname in dirnames:
+                    dir_path = os.path.join(dirpath, dirname)
+                    os.rmdir(dir_path)
+
             with open('temp/text.txt', 'w+') as f:
                 f.truncate(0)
                 f.seek(0)
