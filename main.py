@@ -14,6 +14,7 @@ import subprocess
 import re
 from PySide6 import QtCore, QtWidgets, QtGui
 import traceback
+from PIL import Image
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -29,6 +30,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
                            QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
                                QSizePolicy, QStatusBar, QWidget, QMessageBox, QComboBox)
+
+from PySide6.QtWidgets import *
+from PySide6.QtGui import *
+from PySide6.QtCore import *
 
 from state_tooltip import StateTooltip
 from py_toggle import *
@@ -64,6 +69,7 @@ def notify_in_thread(title_prompt, message_prompt):
         app_icon="fluorite.ico",
         timeout=10,
     )
+
 
 # def notify_in_thread(title_prompt, message_prompt):
 #     thread_notify = Thread(target=notify_function)
@@ -176,6 +182,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     self.status_bar_text.setText("Fetching images")
                     resources = driver.execute_script("return window.performance.getEntriesByType('resource');")
                     i = 0
+
                     for resource in resources:
                         text_set = str("Downloading image " + str(i))
                         text_set = text_set.encode('utf-8')
@@ -186,7 +193,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                             if res.status_code == 200:
                                 with open(filename, 'wb') as f:
                                     shutil.copyfileobj(res.raw, f)
+                                try:
+                                    pixmap = QPixmap(filename)
+                                    button_image = QIcon(pixmap)
+                                    widget_to_update = (("image_") + str(i))
+                                    getattr(self, widget_to_update).setStyleSheet(
+                                        f"QPushButton {{ background-image: url('{filename}'); }}")
+                                    saved_image = Image.open(filename)
+                                    width, height = saved_image.size
+                                    getattr(self, widget_to_update).setMinimumHeight(int(height))
+                                    getattr(self, widget_to_update).setMinimumWidth(int(width))
+                                    getattr(self, widget_to_update).setMaximumHeight(int(height))
+                                    getattr(self, widget_to_update).setMaximumWidth(int(width))
+                                except:
+                                    pass
+
                             i = i + 1
+
                 except:
                     traceback.print_exc()
                     notify_in_thread(title_prompt="Failed", message_prompt='Something went wrong')
@@ -199,8 +222,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     ydl_opts = {'outtmpl': 'temp/videos/%(extractor_key)s/%(extractor)s-%(id)s-%(title)s.%(ext)s'}
                     zxt = url.strip()
                     self.status_bar_text.setText("Downloading video")
+
                     with YoutubeDL(ydl_opts) as ydl:
-                        ydl.download([zxt])
+                        terminal_output = ydl.download([zxt])
+                        self.status_bar_text.setText(terminal_output)
+
                 except:
                     notify_in_thread(title_prompt="Failed", message_prompt='Something went wrong')
 
