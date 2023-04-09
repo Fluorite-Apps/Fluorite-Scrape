@@ -16,11 +16,6 @@ from PySide6 import QtCore, QtWidgets, QtGui
 import traceback
 from PIL import Image
 
-try:
-    _fromUtf8 = QtCore.QString.fromUtf8
-except AttributeError:
-    _fromUtf8 = lambda s: s
-
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
                             QMetaObject, QObject, QPoint, QRect,
                             QSize, QTime, QUrl, Qt)
@@ -47,6 +42,18 @@ from plyer import *
 from plyer import notification
 import shutil
 from threading import Thread
+
+from PySide6.QtCore import QUrl
+from PySide6.QtMultimediaWidgets import QVideoWidget
+from PySide6.QtMultimedia import QMediaPlayer
+
+import threading
+
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
 
 # Global Variables
 global url
@@ -115,6 +122,26 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.status_bar_text = QLabel("", parent=self)
         self.status_bar_layout.addWidget(self.status_bar_text, Qt.AlignCenter, Qt.AlignCenter)
 
+        self.text_next_button = custompushbutton('Next', parent=self)
+        self.text_next_button.clicked.connect(lambda: go_to_next_page())
+        self.next_page_text_layout.addWidget(self.text_next_button, Qt.AlignCenter, Qt.AlignCenter)
+        self.image_next_button = custompushbutton('Next', parent=self)
+        self.image_next_button.clicked.connect(lambda: go_to_next_page())
+        self.next_page_image_layout.addWidget(self.image_next_button, Qt.AlignCenter, Qt.AlignCenter)
+        self.videos_next_button = custompushbutton('Next', parent=self)
+        self.videos_next_button.clicked.connect(lambda: go_to_next_page())
+        self.next_page_videos_layout.addWidget(self.videos_next_button, Qt.AlignCenter, Qt.AlignCenter)
+
+        def go_to_next_page():
+            if str(self.stackedWidget.currentWidget().objectName()) == str("display_text"):
+                self.stackedWidget.setCurrentWidget(self.stackedWidget.findChild(QtWidgets.QWidget, "display_image"))
+            elif str(self.stackedWidget.currentWidget().objectName()) == str("display_image"):
+                self.stackedWidget.setCurrentWidget(self.stackedWidget.findChild(QtWidgets.QWidget, "display_videos"))
+            elif str(self.stackedWidget.currentWidget().objectName()) == str("display_videos"):
+                self.stackedWidget.setCurrentWidget(self.stackedWidget.findChild(QtWidgets.QWidget, "display_text"))
+            else:
+                self.stackedWidget.setCurrentWidget(self.stackedWidget.findChild(QtWidgets.QWidget, "display_text"))
+
         def scrape_in_thread():
             # Threads
             thread_scrape = Thread(target=scrape_gui)
@@ -122,6 +149,16 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             thread_scrape.start()
 
         self.scrape_button.clicked.connect(lambda: scrape_in_thread())
+
+        def play_video_in_thread():
+            print("Running video")
+            player = QMediaPlayer()
+            player.setSource(QUrl("temp/videos/video.mp4"))
+            videoWidget = QVideoWidget()
+            player.setVideoOutput(videoWidget)
+            videoWidget.show()
+            self.video_layout_0.addWidget(videoWidget, Qt.AlignCenter, Qt.AlignCenter)
+            player.play()
 
         def scrape_gui():
 
@@ -210,8 +247,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                             i = i + 1
 
-                except:
-                    traceback.print_exc()
+                except Exception as e:
+                    print(e)
                     notify_in_thread(title_prompt="Failed", message_prompt='Something went wrong')
                     self.status_bar_text.setText("Something went wrong")
 
@@ -219,22 +256,30 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.status_bar_text.setText("Scraping videos")
                 try:
                     self.status_bar_text.setText("Fetching video using YT-dlp")
-                    ydl_opts = {'outtmpl': 'temp/videos/%(extractor_key)s/%(extractor)s-%(id)s-%(title)s.%(ext)s'}
+                    ydl_opts = {'outtmpl': 'temp/videos/video.%(ext)s'}
+                    # https://www.youtube.com/shorts/kjkt_TXN0Sw
                     zxt = url.strip()
                     self.status_bar_text.setText("Downloading video")
 
                     with YoutubeDL(ydl_opts) as ydl:
                         terminal_output = ydl.download([zxt])
-                        self.status_bar_text.setText(terminal_output)
 
-                except:
+                    thread = threading.Thread(target=play_video_in_thread)
+                    thread.start()
+                    print("Thread was started")
+
+
+                except Exception as e:
+                    print(e)
                     notify_in_thread(title_prompt="Failed", message_prompt='Something went wrong')
 
             notify_in_thread(title_prompt="Scraping", message_prompt=('Finished Scraping'))
             self.status_bar_text.setText("Finished scraping")
             self.scrape_layout.removeWidget(self.scrape_button)
             self.scrape_button.deleteLater()
-            self.stackedWidget.setCurrentWidget(self.stackedWidget.findChild(QtWidgets.QWidget, "Display"))
+            print("Going to next page")
+            go_to_next_page()
+
 
 
 app = QtWidgets.QApplication(sys.argv)

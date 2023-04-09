@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'windowkxOCom.ui'
+## Form generated from reading UI file 'windowWhMJYn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -452,20 +452,261 @@ class Ui_MainWindow(object):
         self.label_2.raise_()
         self.label_3.raise_()
         self.back_button_frame_8.raise_()
-        self.na10 = QWidget()
-        self.na10.setObjectName(u"na10")
-        self.stackedWidget.addWidget(self.na10)
+        self.display_videos = QWidget()
+        self.display_videos.setObjectName(u"display_videos")
+        self.label_28 = QLabel(self.display_videos)
+        self.label_28.setObjectName(u"label_28")
+        self.label_28.setGeometry(QRect(330, 81, 441, 91))
+        self.label_28.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+"			background-color: #21252d;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.scrollArea_3 = QScrollArea(self.display_videos)
+        self.scrollArea_3.setObjectName(u"scrollArea_3")
+        self.scrollArea_3.setGeometry(QRect(329, 200, 441, 451))
+        self.scrollArea_3.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.scrollArea_3.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.scrollArea_3.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.scrollArea_3.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_4 = QWidget()
+        self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 439, 449))
+        self.gridLayout_4 = QGridLayout(self.scrollAreaWidgetContents_4)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.title_11 = QLabel(self.scrollAreaWidgetContents_4)
+        self.title_11.setObjectName(u"title_11")
+        self.title_11.setFont(font)
+        self.title_11.setStyleSheet(u"color: gray")
+        self.title_11.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.title_11, 0, 0, 1, 1)
+
+        self.video_frame = QFrame(self.scrollAreaWidgetContents_4)
+        self.video_frame.setObjectName(u"video_frame")
+        self.video_frame.setCursor(QCursor(Qt.PointingHandCursor))
+        self.video_frame.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border: 2px solid rgb(73, 88, 97);\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.video_frame.setFrameShape(QFrame.NoFrame)
+        self.video_frame.setFrameShadow(QFrame.Raised)
+        self.video_frame.setLineWidth(0)
+        self.video_layout_0 = QHBoxLayout(self.video_frame)
+        self.video_layout_0.setSpacing(0)
+        self.video_layout_0.setObjectName(u"video_layout_0")
+        self.video_layout_0.setContentsMargins(0, 0, 0, 0)
+
+        self.gridLayout_4.addWidget(self.video_frame, 1, 0, 1, 1)
+
+        self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_4)
+        self.next_page_videos = QFrame(self.display_videos)
+        self.next_page_videos.setObjectName(u"next_page_videos")
+        self.next_page_videos.setGeometry(QRect(680, 681, 91, 51))
+        self.next_page_videos.setCursor(QCursor(Qt.PointingHandCursor))
+        self.next_page_videos.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border: 2px solid rgb(73, 88, 97);\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.next_page_videos.setFrameShape(QFrame.NoFrame)
+        self.next_page_videos.setFrameShadow(QFrame.Raised)
+        self.next_page_videos.setLineWidth(0)
+        self.next_page_videos_layout = QHBoxLayout(self.next_page_videos)
+        self.next_page_videos_layout.setSpacing(0)
+        self.next_page_videos_layout.setObjectName(u"next_page_videos_layout")
+        self.next_page_videos_layout.setContentsMargins(0, 0, 0, 0)
+        self.label_29 = QLabel(self.display_videos)
+        self.label_29.setObjectName(u"label_29")
+        self.label_29.setGeometry(QRect(290, 40, 521, 721))
+        self.label_29.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+"			background-color: #3C4052;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.title_8 = QLabel(self.display_videos)
+        self.title_8.setObjectName(u"title_8")
+        self.title_8.setGeometry(QRect(330, 80, 441, 91))
+        self.title_8.setFont(font)
+        self.title_8.setStyleSheet(u"color: gray")
+        self.title_8.setAlignment(Qt.AlignCenter)
+        self.stackedWidget.addWidget(self.display_videos)
+        self.label_29.raise_()
+        self.label_28.raise_()
+        self.scrollArea_3.raise_()
+        self.next_page_videos.raise_()
+        self.title_8.raise_()
         self.na9 = QWidget()
         self.na9.setObjectName(u"na9")
         self.stackedWidget.addWidget(self.na9)
-        self.na1 = QWidget()
-        self.na1.setObjectName(u"na1")
-        self.stackedWidget.addWidget(self.na1)
-        self.Display = QWidget()
-        self.Display.setObjectName(u"Display")
-        self.label_22 = QLabel(self.Display)
+        self.display_text = QWidget()
+        self.display_text.setObjectName(u"display_text")
+        self.label_26 = QLabel(self.display_text)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setGeometry(QRect(290, 40, 521, 721))
+        self.label_26.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+"			background-color: #3C4052;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.title_7 = QLabel(self.display_text)
+        self.title_7.setObjectName(u"title_7")
+        self.title_7.setGeometry(QRect(330, 60, 441, 91))
+        self.title_7.setFont(font)
+        self.title_7.setStyleSheet(u"color: gray")
+        self.title_7.setAlignment(Qt.AlignCenter)
+        self.scrollArea_2 = QScrollArea(self.display_text)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setGeometry(QRect(329, 179, 441, 451))
+        self.scrollArea_2.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.scrollArea_2.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.scrollArea_2.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 439, 449))
+        self.gridLayout_2 = QGridLayout(self.scrollAreaWidgetContents_2)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.line_2 = QFrame(self.scrollAreaWidgetContents_2)
+        self.line_2.setObjectName(u"line_2")
+        self.line_2.setFrameShape(QFrame.HLine)
+        self.line_2.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_2.addWidget(self.line_2, 2, 0, 1, 1)
+
+        self.title_9 = QLabel(self.scrollAreaWidgetContents_2)
+        self.title_9.setObjectName(u"title_9")
+        self.title_9.setFont(font)
+        self.title_9.setStyleSheet(u"color: gray")
+        self.title_9.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_2.addWidget(self.title_9, 0, 0, 1, 1)
+
+        self.textBrowser = QTextBrowser(self.scrollAreaWidgetContents_2)
+        self.textBrowser.setObjectName(u"textBrowser")
+        self.textBrowser.setMinimumSize(QSize(421, 300))
+        self.textBrowser.setStyleSheet(u"QTextBrowser { background-color: rgb(70, 74, 95); }\n"
+"")
+
+        self.gridLayout_2.addWidget(self.textBrowser, 1, 0, 1, 1)
+
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+        self.scroll_layout_frame_2 = QFrame(self.display_text)
+        self.scroll_layout_frame_2.setObjectName(u"scroll_layout_frame_2")
+        self.scroll_layout_frame_2.setGeometry(QRect(329, 179, 441, 51))
+        self.scroll_layout_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.scroll_layout_frame_2.setStyleSheet(u"QPushButton {\n"
+"\n"
+"\n"
+"			background-color: #595D75;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.scroll_layout_frame_2.setFrameShape(QFrame.NoFrame)
+        self.scroll_layout_frame_2.setFrameShadow(QFrame.Raised)
+        self.scroll_layout_frame_2.setLineWidth(0)
+        self.scroll_widget_layout_2 = QHBoxLayout(self.scroll_layout_frame_2)
+        self.scroll_widget_layout_2.setSpacing(0)
+        self.scroll_widget_layout_2.setObjectName(u"scroll_widget_layout_2")
+        self.scroll_widget_layout_2.setContentsMargins(0, 0, 0, 0)
+        self.label_27 = QLabel(self.display_text)
+        self.label_27.setObjectName(u"label_27")
+        self.label_27.setGeometry(QRect(330, 60, 441, 91))
+        self.label_27.setStyleSheet(u"QLabel {\n"
+"\n"
+"\n"
+"			background-color: #21252d;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.next_page_text = QFrame(self.display_text)
+        self.next_page_text.setObjectName(u"next_page_text")
+        self.next_page_text.setGeometry(QRect(680, 660, 91, 51))
+        self.next_page_text.setCursor(QCursor(Qt.PointingHandCursor))
+        self.next_page_text.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border: 2px solid rgb(73, 88, 97);\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.next_page_text.setFrameShape(QFrame.NoFrame)
+        self.next_page_text.setFrameShadow(QFrame.Raised)
+        self.next_page_text.setLineWidth(0)
+        self.next_page_text_layout = QHBoxLayout(self.next_page_text)
+        self.next_page_text_layout.setSpacing(0)
+        self.next_page_text_layout.setObjectName(u"next_page_text_layout")
+        self.next_page_text_layout.setContentsMargins(0, 0, 0, 0)
+        self.stackedWidget.addWidget(self.display_text)
+        self.label_26.raise_()
+        self.label_27.raise_()
+        self.title_7.raise_()
+        self.scrollArea_2.raise_()
+        self.scroll_layout_frame_2.raise_()
+        self.next_page_text.raise_()
+        self.display_image = QWidget()
+        self.display_image.setObjectName(u"display_image")
+        self.label_22 = QLabel(self.display_image)
         self.label_22.setObjectName(u"label_22")
-        self.label_22.setGeometry(QRect(330, 90, 441, 91))
+        self.label_22.setGeometry(QRect(330, 60, 441, 91))
         self.label_22.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -474,9 +715,9 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_25 = QLabel(self.Display)
+        self.label_25 = QLabel(self.display_image)
         self.label_25.setObjectName(u"label_25")
-        self.label_25.setGeometry(QRect(290, 70, 521, 721))
+        self.label_25.setGeometry(QRect(290, 40, 521, 721))
         self.label_25.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -485,65 +726,58 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.title_4 = QLabel(self.Display)
+        self.title_4 = QLabel(self.display_image)
         self.title_4.setObjectName(u"title_4")
-        self.title_4.setGeometry(QRect(330, 90, 441, 91))
+        self.title_4.setGeometry(QRect(330, 60, 441, 91))
         self.title_4.setFont(font)
         self.title_4.setStyleSheet(u"color: gray")
         self.title_4.setAlignment(Qt.AlignCenter)
-        self.scrollArea = QScrollArea(self.Display)
+        self.scrollArea = QScrollArea(self.display_image)
         self.scrollArea.setObjectName(u"scrollArea")
-        self.scrollArea.setGeometry(QRect(329, 209, 441, 561))
+        self.scrollArea.setGeometry(QRect(329, 179, 441, 451))
         self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self.scrollArea.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 439, 1895))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 422, 1546))
         self.gridLayout = QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.image_40 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_40.setObjectName(u"image_40")
-        self.image_40.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+        self.image_41 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_41.setObjectName(u"image_41")
+        self.image_41.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_40, 50, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_41, 33, 0, 1, 1)
 
-        self.image_17 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_17.setObjectName(u"image_17")
-        self.image_17.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+        self.image_2 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_2.setObjectName(u"image_2")
+        self.image_2.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_17, 21, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_2, 3, 0, 1, 1)
 
-        self.image_15 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_15.setObjectName(u"image_15")
-        self.image_15.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+        self.image_31 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_31.setObjectName(u"image_31")
+        self.image_31.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_15, 19, 0, 1, 1)
-
-        self.image_20 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_20.setObjectName(u"image_20")
-        self.image_20.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_20, 24, 0, 1, 1)
-
-        self.image_29 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_29.setObjectName(u"image_29")
-        self.image_29.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_29, 48, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_31, 32, 0, 1, 1)
 
         self.image_11 = QPushButton(self.scrollAreaWidgetContents)
         self.image_11.setObjectName(u"image_11")
         self.image_11.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_11, 15, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_11, 12, 0, 1, 1)
+
+        self.image_40 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_40.setObjectName(u"image_40")
+        self.image_40.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_40, 47, 0, 1, 1)
 
         self.title_6 = QLabel(self.scrollAreaWidgetContents)
         self.title_6.setObjectName(u"title_6")
@@ -551,365 +785,362 @@ class Ui_MainWindow(object):
         self.title_6.setStyleSheet(u"color: gray")
         self.title_6.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout.addWidget(self.title_6, 3, 0, 1, 1)
-
-        self.image_30 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_30.setObjectName(u"image_30")
-        self.image_30.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_30, 37, 0, 1, 1)
-
-        self.image_45 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_45.setObjectName(u"image_45")
-        self.image_45.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_45, 33, 0, 1, 1)
-
-        self.image_46 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_46.setObjectName(u"image_46")
-        self.image_46.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_46, 38, 0, 1, 1)
-
-        self.image_32 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_32.setObjectName(u"image_32")
-        self.image_32.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_32, 47, 0, 1, 1)
-
-        self.image_39 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_39.setObjectName(u"image_39")
-        self.image_39.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_39, 46, 0, 1, 1)
-
-        self.image_18 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_18.setObjectName(u"image_18")
-        self.image_18.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_18, 22, 0, 1, 1)
+        self.gridLayout.addWidget(self.title_6, 0, 0, 1, 1)
 
         self.image_26 = QPushButton(self.scrollAreaWidgetContents)
         self.image_26.setObjectName(u"image_26")
         self.image_26.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_26, 32, 0, 1, 1)
-
-        self.image_9 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_9.setObjectName(u"image_9")
-        self.image_9.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_9, 13, 0, 1, 1)
-
-        self.line = QFrame(self.scrollAreaWidgetContents)
-        self.line.setObjectName(u"line")
-        self.line.setFrameShape(QFrame.HLine)
-        self.line.setFrameShadow(QFrame.Sunken)
-
-        self.gridLayout.addWidget(self.line, 2, 0, 1, 1)
-
-        self.image_47 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_47.setObjectName(u"image_47")
-        self.image_47.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_47, 49, 0, 1, 1)
-
-        self.image_22 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_22.setObjectName(u"image_22")
-        self.image_22.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_22, 26, 0, 1, 1)
-
-        self.image_33 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_33.setObjectName(u"image_33")
-        self.image_33.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_33, 43, 0, 1, 1)
-
-        self.image_23 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_23.setObjectName(u"image_23")
-        self.image_23.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_23, 27, 0, 1, 1)
-
-        self.textBrowser = QTextBrowser(self.scrollAreaWidgetContents)
-        self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setMinimumSize(QSize(421, 300))
-        self.textBrowser.setStyleSheet(u"QTextBrowser { background-color: rgb(70, 74, 95); }\n"
-"")
-
-        self.gridLayout.addWidget(self.textBrowser, 1, 0, 1, 1)
-
-        self.image_49 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_49.setObjectName(u"image_49")
-        self.image_49.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_49, 53, 0, 1, 1)
-
-        self.image_42 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_42.setObjectName(u"image_42")
-        self.image_42.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_42, 40, 0, 1, 1)
-
-        self.image_48 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_48.setObjectName(u"image_48")
-        self.image_48.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_48, 45, 0, 1, 1)
-
-        self.image_37 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_37.setObjectName(u"image_37")
-        self.image_37.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_37, 52, 0, 1, 1)
-
-        self.image_4 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_4.setObjectName(u"image_4")
-        self.image_4.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_4, 8, 0, 1, 1)
-
-        self.image_14 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_14.setObjectName(u"image_14")
-        self.image_14.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_14, 18, 0, 1, 1)
-
-        self.image_16 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_16.setObjectName(u"image_16")
-        self.image_16.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_16, 20, 0, 1, 1)
-
-        self.image_25 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_25.setObjectName(u"image_25")
-        self.image_25.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_25, 41, 0, 1, 1)
-
-        self.image_1 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_1.setObjectName(u"image_1")
-        self.image_1.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_1, 5, 0, 1, 1)
-
-        self.image_3 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_3.setObjectName(u"image_3")
-        self.image_3.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_3, 7, 0, 1, 1)
-
-        self.image_2 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_2.setObjectName(u"image_2")
-        self.image_2.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_2, 6, 0, 1, 1)
-
-        self.image_38 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_38.setObjectName(u"image_38")
-        self.image_38.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_38, 51, 0, 1, 1)
-
-        self.image_19 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_19.setObjectName(u"image_19")
-        self.image_19.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_19, 23, 0, 1, 1)
-
-        self.image_28 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_28.setObjectName(u"image_28")
-        self.image_28.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_28, 44, 0, 1, 1)
-
-        self.image_27 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_27.setObjectName(u"image_27")
-        self.image_27.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_27, 30, 0, 1, 1)
-
-        self.image_24 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_24.setObjectName(u"image_24")
-        self.image_24.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_24, 28, 0, 1, 1)
-
-        self.image_31 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_31.setObjectName(u"image_31")
-        self.image_31.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_31, 35, 0, 1, 1)
-
-        self.image_6 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_6.setObjectName(u"image_6")
-        self.image_6.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_6, 10, 0, 1, 1)
-
-        self.image_13 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_13.setObjectName(u"image_13")
-        self.image_13.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_13, 17, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_26, 29, 0, 1, 1)
 
         self.image_36 = QPushButton(self.scrollAreaWidgetContents)
         self.image_36.setObjectName(u"image_36")
         self.image_36.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_36, 34, 0, 1, 1)
-
-        self.image_34 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_34.setObjectName(u"image_34")
-        self.image_34.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_34, 39, 0, 1, 1)
-
-        self.image_12 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_12.setObjectName(u"image_12")
-        self.image_12.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_12, 16, 0, 1, 1)
-
-        self.title_5 = QLabel(self.scrollAreaWidgetContents)
-        self.title_5.setObjectName(u"title_5")
-        self.title_5.setFont(font)
-        self.title_5.setStyleSheet(u"color: gray")
-        self.title_5.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout.addWidget(self.title_5, 0, 0, 1, 1)
-
-        self.image_0 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_0.setObjectName(u"image_0")
-        self.image_0.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_0, 4, 0, 1, 1)
-
-        self.image_41 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_41.setObjectName(u"image_41")
-        self.image_41.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_41, 36, 0, 1, 1)
-
-        self.image_43 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_43.setObjectName(u"image_43")
-        self.image_43.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_43, 31, 0, 1, 1)
-
-        self.image_10 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_10.setObjectName(u"image_10")
-        self.image_10.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_10, 14, 0, 1, 1)
-
-        self.image_5 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_5.setObjectName(u"image_5")
-        self.image_5.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_5, 9, 0, 1, 1)
-
-        self.image_7 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_7.setObjectName(u"image_7")
-        self.image_7.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_7, 11, 0, 1, 1)
-
-        self.image_8 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_8.setObjectName(u"image_8")
-        self.image_8.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_8, 12, 0, 1, 1)
-
-        self.image_35 = QPushButton(self.scrollAreaWidgetContents)
-        self.image_35.setObjectName(u"image_35")
-        self.image_35.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
-"border-color: rgba(0, 0, 0, 0);")
-
-        self.gridLayout.addWidget(self.image_35, 42, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_36, 31, 0, 1, 1)
 
         self.image_21 = QPushButton(self.scrollAreaWidgetContents)
         self.image_21.setObjectName(u"image_21")
         self.image_21.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_21, 25, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_21, 22, 0, 1, 1)
+
+        self.image_8 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_8.setObjectName(u"image_8")
+        self.image_8.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_8, 9, 0, 1, 1)
+
+        self.image_0 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_0.setObjectName(u"image_0")
+        self.image_0.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_0, 1, 0, 1, 1)
+
+        self.image_13 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_13.setObjectName(u"image_13")
+        self.image_13.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_13, 14, 0, 1, 1)
+
+        self.image_10 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_10.setObjectName(u"image_10")
+        self.image_10.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_10, 11, 0, 1, 1)
+
+        self.image_15 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_15.setObjectName(u"image_15")
+        self.image_15.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_15, 16, 0, 1, 1)
+
+        self.image_38 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_38.setObjectName(u"image_38")
+        self.image_38.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_38, 48, 0, 1, 1)
+
+        self.image_3 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_3.setObjectName(u"image_3")
+        self.image_3.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_3, 4, 0, 1, 1)
+
+        self.image_47 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_47.setObjectName(u"image_47")
+        self.image_47.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_47, 46, 0, 1, 1)
+
+        self.image_9 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_9.setObjectName(u"image_9")
+        self.image_9.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_9, 10, 0, 1, 1)
+
+        self.image_18 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_18.setObjectName(u"image_18")
+        self.image_18.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_18, 19, 0, 1, 1)
+
+        self.image_12 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_12.setObjectName(u"image_12")
+        self.image_12.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_12, 13, 0, 1, 1)
+
+        self.image_6 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_6.setObjectName(u"image_6")
+        self.image_6.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_6, 7, 0, 1, 1)
+
+        self.image_5 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_5.setObjectName(u"image_5")
+        self.image_5.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_5, 6, 0, 1, 1)
+
+        self.image_19 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_19.setObjectName(u"image_19")
+        self.image_19.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_19, 20, 0, 1, 1)
+
+        self.image_37 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_37.setObjectName(u"image_37")
+        self.image_37.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_37, 49, 0, 1, 1)
+
+        self.image_1 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_1.setObjectName(u"image_1")
+        self.image_1.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_1, 2, 0, 1, 1)
+
+        self.image_49 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_49.setObjectName(u"image_49")
+        self.image_49.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_49, 50, 0, 1, 1)
+
+        self.image_28 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_28.setObjectName(u"image_28")
+        self.image_28.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_28, 41, 0, 1, 1)
+
+        self.image_35 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_35.setObjectName(u"image_35")
+        self.image_35.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_35, 39, 0, 1, 1)
+
+        self.image_39 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_39.setObjectName(u"image_39")
+        self.image_39.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_39, 43, 0, 1, 1)
+
+        self.image_4 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_4.setObjectName(u"image_4")
+        self.image_4.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_4, 5, 0, 1, 1)
+
+        self.image_45 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_45.setObjectName(u"image_45")
+        self.image_45.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_45, 30, 0, 1, 1)
+
+        self.image_48 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_48.setObjectName(u"image_48")
+        self.image_48.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_48, 42, 0, 1, 1)
+
+        self.image_20 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_20.setObjectName(u"image_20")
+        self.image_20.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_20, 21, 0, 1, 1)
+
+        self.image_27 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_27.setObjectName(u"image_27")
+        self.image_27.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_27, 27, 0, 1, 1)
+
+        self.image_14 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_14.setObjectName(u"image_14")
+        self.image_14.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_14, 15, 0, 1, 1)
+
+        self.image_33 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_33.setObjectName(u"image_33")
+        self.image_33.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_33, 40, 0, 1, 1)
+
+        self.image_29 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_29.setObjectName(u"image_29")
+        self.image_29.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_29, 45, 0, 1, 1)
+
+        self.image_16 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_16.setObjectName(u"image_16")
+        self.image_16.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_16, 17, 0, 1, 1)
+
+        self.image_43 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_43.setObjectName(u"image_43")
+        self.image_43.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_43, 28, 0, 1, 1)
+
+        self.image_23 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_23.setObjectName(u"image_23")
+        self.image_23.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_23, 24, 0, 1, 1)
+
+        self.image_22 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_22.setObjectName(u"image_22")
+        self.image_22.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_22, 23, 0, 1, 1)
+
+        self.image_46 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_46.setObjectName(u"image_46")
+        self.image_46.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_46, 35, 0, 1, 1)
+
+        self.image_34 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_34.setObjectName(u"image_34")
+        self.image_34.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_34, 36, 0, 1, 1)
+
+        self.image_7 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_7.setObjectName(u"image_7")
+        self.image_7.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_7, 8, 0, 1, 1)
+
+        self.image_17 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_17.setObjectName(u"image_17")
+        self.image_17.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_17, 18, 0, 1, 1)
+
+        self.image_30 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_30.setObjectName(u"image_30")
+        self.image_30.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_30, 34, 0, 1, 1)
 
         self.image_44 = QPushButton(self.scrollAreaWidgetContents)
         self.image_44.setObjectName(u"image_44")
         self.image_44.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
 "border-color: rgba(0, 0, 0, 0);")
 
-        self.gridLayout.addWidget(self.image_44, 29, 0, 1, 1)
+        self.gridLayout.addWidget(self.image_44, 26, 0, 1, 1)
+
+        self.image_25 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_25.setObjectName(u"image_25")
+        self.image_25.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_25, 38, 0, 1, 1)
+
+        self.image_24 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_24.setObjectName(u"image_24")
+        self.image_24.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_24, 25, 0, 1, 1)
+
+        self.image_32 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_32.setObjectName(u"image_32")
+        self.image_32.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_32, 44, 0, 1, 1)
+
+        self.image_42 = QPushButton(self.scrollAreaWidgetContents)
+        self.image_42.setObjectName(u"image_42")
+        self.image_42.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
+"border-color: rgba(0, 0, 0, 0);")
+
+        self.gridLayout.addWidget(self.image_42, 37, 0, 1, 1)
 
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
-        self.scroll_layout_frame = QFrame(self.Display)
-        self.scroll_layout_frame.setObjectName(u"scroll_layout_frame")
-        self.scroll_layout_frame.setGeometry(QRect(329, 209, 441, 51))
-        self.scroll_layout_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.scroll_layout_frame.setStyleSheet(u"QPushButton {\n"
+        self.next_page_image = QFrame(self.display_image)
+        self.next_page_image.setObjectName(u"next_page_image")
+        self.next_page_image.setGeometry(QRect(680, 660, 91, 51))
+        self.next_page_image.setCursor(QCursor(Qt.PointingHandCursor))
+        self.next_page_image.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border: 2px solid rgb(73, 88, 97);\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	border-bottom-right-radius: 15px;\n"
+"	border-top-right-radius: 15px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
 "\n"
-"\n"
-"			background-color: #595D75;\n"
-"			padding: 12px;\n"
-"			border-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
-        self.scroll_layout_frame.setFrameShape(QFrame.NoFrame)
-        self.scroll_layout_frame.setFrameShadow(QFrame.Raised)
-        self.scroll_layout_frame.setLineWidth(0)
-        self.scroll_widget_layout = QHBoxLayout(self.scroll_layout_frame)
-        self.scroll_widget_layout.setSpacing(0)
-        self.scroll_widget_layout.setObjectName(u"scroll_widget_layout")
-        self.scroll_widget_layout.setContentsMargins(0, 0, 0, 0)
-        self.stackedWidget.addWidget(self.Display)
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.next_page_image.setFrameShape(QFrame.NoFrame)
+        self.next_page_image.setFrameShadow(QFrame.Raised)
+        self.next_page_image.setLineWidth(0)
+        self.next_page_image_layout = QHBoxLayout(self.next_page_image)
+        self.next_page_image_layout.setSpacing(0)
+        self.next_page_image_layout.setObjectName(u"next_page_image_layout")
+        self.next_page_image_layout.setContentsMargins(0, 0, 0, 0)
+        self.stackedWidget.addWidget(self.display_image)
         self.label_25.raise_()
         self.label_22.raise_()
         self.title_4.raise_()
         self.scrollArea.raise_()
-        self.scroll_layout_frame.raise_()
+        self.next_page_image.raise_()
         self.na8 = QWidget()
         self.na8.setObjectName(u"na8")
         self.stackedWidget.addWidget(self.na8)
@@ -1003,60 +1234,67 @@ class Ui_MainWindow(object):
         self.label_16.setText("")
         self.label_17.setText("")
         self.label_18.setText("")
+        self.label_28.setText("")
+        self.title_11.setText(QCoreApplication.translate("MainWindow", u"Videos", None))
+        self.label_29.setText("")
+        self.title_8.setText(QCoreApplication.translate("MainWindow", u"Fluorite Scrape", None))
+        self.label_26.setText("")
+        self.title_7.setText(QCoreApplication.translate("MainWindow", u"Fluorite Scrape", None))
+        self.title_9.setText(QCoreApplication.translate("MainWindow", u"Text", None))
+        self.label_27.setText("")
         self.label_22.setText("")
         self.label_25.setText("")
         self.title_4.setText(QCoreApplication.translate("MainWindow", u"Fluorite Scrape", None))
-        self.image_40.setText("")
-        self.image_17.setText("")
-        self.image_15.setText("")
-        self.image_20.setText("")
-        self.image_29.setText("")
-        self.image_11.setText("")
-        self.title_6.setText(QCoreApplication.translate("MainWindow", u"Images", None))
-        self.image_30.setText("")
-        self.image_45.setText("")
-        self.image_46.setText("")
-        self.image_32.setText("")
-        self.image_39.setText("")
-        self.image_18.setText("")
-        self.image_26.setText("")
-        self.image_9.setText("")
-        self.image_47.setText("")
-        self.image_22.setText("")
-        self.image_33.setText("")
-        self.image_23.setText("")
-        self.image_49.setText("")
-        self.image_42.setText("")
-        self.image_48.setText("")
-        self.image_37.setText("")
-        self.image_4.setText("")
-        self.image_14.setText("")
-        self.image_16.setText("")
-        self.image_25.setText("")
-        self.image_1.setText("")
-        self.image_3.setText("")
-        self.image_2.setText("")
-        self.image_38.setText("")
-        self.image_19.setText("")
-        self.image_28.setText("")
-        self.image_27.setText("")
-        self.image_24.setText("")
-        self.image_31.setText("")
-        self.image_6.setText("")
-        self.image_13.setText("")
-        self.image_36.setText("")
-        self.image_34.setText("")
-        self.image_12.setText("")
-        self.title_5.setText(QCoreApplication.translate("MainWindow", u"Text", None))
-        self.image_0.setText("")
         self.image_41.setText("")
-        self.image_43.setText("")
-        self.image_10.setText("")
-        self.image_5.setText("")
-        self.image_7.setText("")
-        self.image_8.setText("")
-        self.image_35.setText("")
+        self.image_2.setText("")
+        self.image_31.setText("")
+        self.image_11.setText("")
+        self.image_40.setText("")
+        self.title_6.setText(QCoreApplication.translate("MainWindow", u"Images", None))
+        self.image_26.setText("")
+        self.image_36.setText("")
         self.image_21.setText("")
+        self.image_8.setText("")
+        self.image_0.setText("")
+        self.image_13.setText("")
+        self.image_10.setText("")
+        self.image_15.setText("")
+        self.image_38.setText("")
+        self.image_3.setText("")
+        self.image_47.setText("")
+        self.image_9.setText("")
+        self.image_18.setText("")
+        self.image_12.setText("")
+        self.image_6.setText("")
+        self.image_5.setText("")
+        self.image_19.setText("")
+        self.image_37.setText("")
+        self.image_1.setText("")
+        self.image_49.setText("")
+        self.image_28.setText("")
+        self.image_35.setText("")
+        self.image_39.setText("")
+        self.image_4.setText("")
+        self.image_45.setText("")
+        self.image_48.setText("")
+        self.image_20.setText("")
+        self.image_27.setText("")
+        self.image_14.setText("")
+        self.image_33.setText("")
+        self.image_29.setText("")
+        self.image_16.setText("")
+        self.image_43.setText("")
+        self.image_23.setText("")
+        self.image_22.setText("")
+        self.image_46.setText("")
+        self.image_34.setText("")
+        self.image_7.setText("")
+        self.image_17.setText("")
+        self.image_30.setText("")
         self.image_44.setText("")
+        self.image_25.setText("")
+        self.image_24.setText("")
+        self.image_32.setText("")
+        self.image_42.setText("")
     # retranslateUi
 
