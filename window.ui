@@ -1102,7 +1102,7 @@ QPushButton:hover {
          </widget>
         </item>
         <item row="1" column="0">
-         <widget class="QFrame" name="video_frame">
+         <widget class="QFrame" name="video_frame_0">
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
@@ -1635,7 +1635,7 @@ QPushButton:hover {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>422</width>
+         <width>98</width>
          <height>1546</height>
         </rect>
        </property>

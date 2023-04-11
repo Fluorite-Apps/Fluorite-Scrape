@@ -47,8 +47,7 @@ from PySide6.QtCore import QUrl
 from PySide6.QtMultimediaWidgets import QVideoWidget
 from PySide6.QtMultimedia import QMediaPlayer
 
-import threading
-
+import cv2
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -150,16 +149,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.scrape_button.clicked.connect(lambda: scrape_in_thread())
 
-        def play_video_in_thread():
-            print("Running video")
-            player = QMediaPlayer()
-            player.setSource(QUrl("temp/videos/video.mp4"))
-            videoWidget = QVideoWidget()
-            player.setVideoOutput(videoWidget)
-            videoWidget.show()
-            self.video_layout_0.addWidget(videoWidget, Qt.AlignCenter, Qt.AlignCenter)
-            player.play()
-
         def scrape_gui():
 
             # Deleting all temp files
@@ -257,16 +246,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 try:
                     self.status_bar_text.setText("Fetching video using YT-dlp")
                     ydl_opts = {'outtmpl': 'temp/videos/video.%(ext)s'}
-                    # https://www.youtube.com/shorts/kjkt_TXN0Sw
                     zxt = url.strip()
                     self.status_bar_text.setText("Downloading video")
 
                     with YoutubeDL(ydl_opts) as ydl:
                         terminal_output = ydl.download([zxt])
 
-                    thread = threading.Thread(target=play_video_in_thread)
-                    thread.start()
-                    print("Thread was started")
+                    cap = cv2.VideoCapture('temp/videos/video.mp4')
+                    ret, frame = cap.read()
+                    height, width, channel = frame.shape
+                    bytesPerLine = 3 * width
+                    qImg = QImage(frame.data, width, height, bytesPerLine, QImage.Format_RGB888).rgbSwapped()
+                    label = QLabel(" ", parent=self)
+                    label.setPixmap(QPixmap.fromImage(qImg))
+                    self.video_layout_0.addWidget(label)
 
 
                 except Exception as e:
@@ -277,7 +270,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_bar_text.setText("Finished scraping")
             self.scrape_layout.removeWidget(self.scrape_button)
             self.scrape_button.deleteLater()
-            print("Going to next page")
             go_to_next_page()
 
 

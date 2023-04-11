@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'windowWhMJYn.ui'
+## Form generated from reading UI file 'windowsRNNtZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -485,10 +485,10 @@ class Ui_MainWindow(object):
 
         self.gridLayout_4.addWidget(self.title_11, 0, 0, 1, 1)
 
-        self.video_frame = QFrame(self.scrollAreaWidgetContents_4)
-        self.video_frame.setObjectName(u"video_frame")
-        self.video_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.video_frame.setStyleSheet(u"QPushButton{\n"
+        self.video_frame_0 = QFrame(self.scrollAreaWidgetContents_4)
+        self.video_frame_0.setObjectName(u"video_frame_0")
+        self.video_frame_0.setCursor(QCursor(Qt.PointingHandCursor))
+        self.video_frame_0.setStyleSheet(u"QPushButton{\n"
 "	\n"
 "	font: 9pt \"Segoe UI\";\n"
 "	background-color: rgb(89, 93, 117);\n"
@@ -509,15 +509,15 @@ class Ui_MainWindow(object):
 "	border-top-right-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
 "}")
-        self.video_frame.setFrameShape(QFrame.NoFrame)
-        self.video_frame.setFrameShadow(QFrame.Raised)
-        self.video_frame.setLineWidth(0)
-        self.video_layout_0 = QHBoxLayout(self.video_frame)
+        self.video_frame_0.setFrameShape(QFrame.NoFrame)
+        self.video_frame_0.setFrameShadow(QFrame.Raised)
+        self.video_frame_0.setLineWidth(0)
+        self.video_layout_0 = QHBoxLayout(self.video_frame_0)
         self.video_layout_0.setSpacing(0)
         self.video_layout_0.setObjectName(u"video_layout_0")
         self.video_layout_0.setContentsMargins(0, 0, 0, 0)
 
-        self.gridLayout_4.addWidget(self.video_frame, 1, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.video_frame_0, 1, 0, 1, 1)
 
         self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_4)
         self.next_page_videos = QFrame(self.display_videos)
@@ -741,7 +741,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 422, 1546))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 98, 1546))
         self.gridLayout = QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout.setObjectName(u"gridLayout")
         self.image_41 = QPushButton(self.scrollAreaWidgetContents)
